@@ -1,0 +1,39 @@
+# -----------------------------------------------------------------------------
+# Repositorio .github (perfil de organización / plantillas)
+# Evita subir artefactos locales, credenciales o archivos del sistema por error.
+# -----------------------------------------------------------------------------
+
+# --- Asistentes y editores (carpetas de configuración local, no van al remoto)
+.claude/
+.cursor/
+.vscode/
+.idea/
+.fleet/
+
+# --- Sistema operativo
+.DS_Store
+Thumbs.db
+
+# --- Variables de entorno y secretos (nunca versionar tokens ni claves)
+.env
+.env.*
+!.env.example
+
+# --- Claves y certificados (si alguien los deja en el repo por error)
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+*.p12
+*.pfx
+
+# --- Logs y temporales
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# --- Editores tipo Vim
+*.swp
+*.swo
